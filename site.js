@@ -29,5 +29,6 @@ function DarkModeToggle() {
 };
 
 if (document.cookie === "darkMode=on") {
+    DarkModeSwitch.click();
     DarkModeToggle();
 }
