@@ -1,11 +1,10 @@
-var DarkModeSwitch = document.getElementById("darkswitch");
 var RootStyle = document.querySelector(':root');
 var Style = getComputedStyle(RootStyle)
 
 var DarkModeEnabled = false;
 
-function DarkModeToggle() {
-    if (DarkModeEnabled == false) {
+function DarkModeToggle(Forced) {
+    if (DarkModeEnabled === false) {
         console.log("Dark Mode Enabled");
 
         DarkModeEnabled = true;
@@ -28,7 +27,10 @@ function DarkModeToggle() {
     }
 };
 
-if (document.cookie === "darkMode=on") {
-    DarkModeSwitch.click();
-    DarkModeToggle();
+window.onload = function () {
+	if (document.cookie === "darkMode=on") {
+		DarkModeEnabled = true;
+		DarkModeToggle();
+		document.getElementById("dark").click();
+	}
 }
