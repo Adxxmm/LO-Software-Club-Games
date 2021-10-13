@@ -3,17 +3,17 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #f1f5f8;
-    --accent-color: #0066ff;
+    --accent-color: #2196F3;
     --text-color: black;
 
     --light-primary-color: #fff;
     --light-secondary-color: #f1f5f8;
-    --light-accent-color: #0066ff;
+    --light-accent-color: #2196F3;
     --light-text-color: black;
 
     --dark-primary-color: rgb(44, 44, 44);
     --dark-secondary-color: #353535;
-    --dark-accent-color: #0066ff;
+    --dark-accent-color: #2196F3;
     --dark-text-color: white;
 
     --transition: 0.2s;
@@ -43,7 +43,8 @@ h1 {
 .topbar {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .topbutton {
@@ -99,7 +100,17 @@ h1 {
     border: 1px solid var(--accent-color);
 }
 
-/* .playbutton:hover .playbuttontext {
-    transition-duration: var(--transition);
-    color: white;
-} */
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+.darkicon {
+    width: 40%;
+    padding-right: 10%;
+}
+
+.lighticon {
+    width: 40%;
+}

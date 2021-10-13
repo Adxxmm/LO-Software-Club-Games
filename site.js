@@ -3,11 +3,8 @@ var RootStyle = document.querySelector(':root');
 var Style = getComputedStyle(RootStyle)
 
 var DarkModeEnabled = false;
-var Count = 0;
 
 function DarkModeToggle() {
-    console.log(Count);
-    console.log(Style.getPropertyValue("--light-primary-color"));
     if (DarkModeEnabled == false) {
         console.log("Dark Mode Enabled");
 

@@ -16,19 +16,34 @@
 
 <body>
     <div class="topbar">
+        <img class="logo" src="./static/lohs.png">
         <h1 class="title">LO Games</h1>
-        <!-- <div class="topbutton">
-                <h1 class="buttontext">Home</h1>
-            </div> -->
+        <p>Browser games made for fun</p>
+        <label class="switch"">
+            <input type="checkbox">
+            <div class="slider round" id="darkswitch" onClick="DarkModeToggle()">
+                <img class="darkicon" src="https://static.thenounproject.com/png/2631023-200.png">
+                <img class="lighticon" src="https://static.thenounproject.com/png/47102-200.png">
+            </div>
+        </label>
     </div>
 
     <div class="generalblock">
-        <h1>Hello</h1>
+        <h1>About</h1>
         <p>Lol</p>
     </div>
     <div class="generalblock">
-        <h1>Hello</h1>
-        <p>Lol</p>
+        <h1>Game 1</h1>
+        <p>Lorem ipsum</p>
+        <div class="playholder">
+            <div class="playbutton">
+                <p class="playbuttontext">Play &#8594;</p>
+            </div>
+        </div>
+    </div>
+    <div class="generalblock">
+        <h1>Game 2</h1>
+        <p>Lorem ipsum</p>
         <div class="playholder">
             <div class="playbutton">
                 <p class="playbuttontext">Play &#8594;</p>
@@ -36,11 +51,5 @@
         </div>
     </div>
 </body>
-<footer>
-    <label class="switch"">
-        <input type="checkbox">
-        <span class="slider round" id="darkswitch" onClick="DarkModeToggle()"></span>
-    </label>
-</footer>
 
 </html>
